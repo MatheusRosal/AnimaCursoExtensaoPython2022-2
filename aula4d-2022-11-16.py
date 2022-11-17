@@ -19,5 +19,9 @@ else:
 sql = f"INSERT INTO pessoas (pessoa_id, nome, nome_civil, tipo) VALUES ({pessoa_id}, '{nome}', '{nome_civil}', '{tipo}')"
 
 cur.execute(sql)
+
+#Insert pessoas_grupo
+#INSERT INTO pessoas_grupos (pessoa_id, grupo_id) VALUES (X,X)
+
 con.commit()
 con.close()
